@@ -1,0 +1,24 @@
+[Unit]
+Description=Discord MCP Events bridge
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=dots-discord
+Group=dots-discord
+WorkingDirectory=/opt/dots-discord
+ExecStart=/usr/bin/node /opt/dots-discord/dist/main.js
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=20
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/dots-discord/data
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+
+[Install]
+WantedBy=multi-user.target

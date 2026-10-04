@@ -1,0 +1,4 @@
+minimumReleaseAge: 10080
+saveExact: true
+allowBuilds:
+  esbuild: true

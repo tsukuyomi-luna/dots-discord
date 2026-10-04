@@ -1,0 +1,21 @@
+{
+  "publicUrl": "https://discord-bridge.example.com",
+  "host": "127.0.0.1",
+  "port": 8788,
+  "database": "./data/bridge.sqlite3",
+  "oauth": {
+    "clientId": "dots-discord",
+    "redirectUris": ["https://chatgpt.com/connector_platform_oauth_redirect"]
+  },
+  "callbackHosts": ["chatgpt.com"],
+  "channels": [
+    {
+      "id": "111111111111111111",
+      "guildId": "222222222222222222",
+      "since": "2026-01-01T00:00:00Z",
+      "historyHours": 168,
+      "write": true,
+      "events": "mentions"
+    }
+  ]
+}

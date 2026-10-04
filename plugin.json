@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "dots-discord",
+  "version": "0.1.0",
+  "description": "Self-hosted Discord messages and MCP Events with explicit channel and history limits",
+  "author": { "name": "Tsukuyomi Luna" },
+  "repository": "https://github.com/tsukuyomi-luna/dots-discord",
+  "license": "MIT"
+}
